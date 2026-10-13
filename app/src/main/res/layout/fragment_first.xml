@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".FirstFragment">
+
+    <!-- Top / Side Left Buttons -->
+
+    <!-- Top / Side Right Buttons -->
+
+    <LinearLayout
+        android:id="@+id/left_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013">
+
+        <Button
+            android:id="@+id/btn_screen_left_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/screen_left_1"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_screen_left_2"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/screen_left_2"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <!-- Center Infinite Scrolling RecyclerView -->
+    <LinearLayout
+        android:id="@+id/right_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013">
+
+        <Button
+            android:id="@+id/btn_screen_right_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/screen_right_1"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_screen_right_2"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/screen_right_2"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="373dp"
+        android:layout_height="540dp"
+        android:layout_marginHorizontal="6dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left_button_container"
+        tools:listitem="@layout/item_infinite_scroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

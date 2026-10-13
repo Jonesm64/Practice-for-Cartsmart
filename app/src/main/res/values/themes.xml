@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with light blue window background -->
+    <style name="Base.Theme.InfiniteScrollTestButtons" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/light_blue</item>
+    </style>
+
+    <style name="Theme.InfiniteScrollTestButtons" parent="Base.Theme.InfiniteScrollTestButtons" />
+
+    <!-- Splash theme with black window background -->
+    <style name="Theme.InfiniteScrollTestButtons.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>
