@@ -5,9 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.updatePadding
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.listingapp.databinding.FragmentFirstBinding
 
@@ -31,19 +28,6 @@ class FirstFragment : Fragment() {
         productAdapter = ProductAdapter()
         binding.recyclerViewProducts.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerViewProducts.adapter = productAdapter
-
-        ViewCompat.setOnApplyWindowInsetsListener(binding.recyclerViewProducts) { v, windowInsets ->
-            val insets = windowInsets.getInsets(
-                WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
-            )
-            v.updatePadding(
-                left = insets.left,
-                top = insets.top,
-                right = insets.right,
-                bottom = insets.bottom
-            )
-            WindowInsetsCompat.CONSUMED
-        }
 
         fetchProductsFromApi()
     }

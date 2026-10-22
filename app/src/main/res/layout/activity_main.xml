@@ -32,9 +32,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="80dp"
-        app:srcCompat="@android:drawable/ic_dialog_email"
-        android:contentDescription="@string/EmailButton"
-        />
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
