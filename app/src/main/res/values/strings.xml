@@ -6,6 +6,7 @@
     <string name="Social_Board">Social Board</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="EmailButton">Email Button</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
