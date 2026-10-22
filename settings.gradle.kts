@@ -22,6 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Infinite Scroll Test + buttons"
+rootProject.name = "ListingApp"
 include(":app")
- 

@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.infinitescrolltestbuttons"
+    namespace = "com.example.listingapp"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.infinitescrolltestbuttons"
+        applicationId = "com.example.listingapp"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
