@@ -10,7 +10,6 @@
         android:id="@+id/recyclerViewProducts"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/StoreDescription"
         android:clipToPadding="false"
         android:paddingVertical="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
